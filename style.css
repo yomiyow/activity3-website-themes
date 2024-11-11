@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px 0 30px;
+}
+
+.title-container {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+  margin-bottom: 40px;
+}
+
+/*========================================
+              Lyrics styles
+========================================*/
+.lyrics {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 25px;
+  margin: 0 auto;
+}
+.lyrics section {
+  display: inherit;
+  flex-flow: inherit;
+  row-gap: 5px;
+  letter-spacing: 1px;
+}
+
+/*========================================
+          Theme button styles
+========================================*/
+select {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+/*========================================
+           3 Theme styles
+========================================*/
+/* Light Theme */
+.light-theme, .light-theme select {
+  background-color: #d5e1df;
+  color: #333333;
+}
+.light-theme .favorite-verse {
+  font-weight: bold;
+  color: black;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+.dark-theme select {
+  background-color: #333333;
+  color: #d4d4d4;
+  border: 1px solid #555555;
+}
+.dark-theme .favorite-verse {
+  font-weight: bold;
+  color: rgb(176, 176, 4);
+}
+
+/* Gradient Theme */
+.gradient-theme, .gradient-theme select {
+  background: linear-gradient(to bottom, #00cc99 0%, #ff99cc 100%);
+  color: #000000;
+}
+.gradient-theme .favorite-verse {
+  font-weight: bold;
+  color: rgb(42, 71, 15);
+}/*# sourceMappingURL=style.css.map */
